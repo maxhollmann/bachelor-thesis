@@ -1,0 +1,37 @@
+\RequirePackage[l2tabu, orthodox]{nag}
+%\documentclass[a4paper,12pt]{article}
+\documentclass[man]{apa}
+
+\usepackage{amsmath}
+\usepackage[a4paper]{geometry}
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage{siunitx}
+\usepackage{booktabs}
+\usepackage{todonotes}
+\usepackage{apacite}
+\usepackage{newclude} % \include* to include without page break
+\usepackage[colorlinks=false, pdfborder={0 0 0}]{hyperref}
+\usepackage{cleveref} % \cref instead of \ref, automatic "Section" etc.
+
+\begin{document}
+
+\title{Testdoc}
+\author{Max Hollmann}
+\affiliation{University of Groningen}
+\date{\today}
+\maketitle
+
+%\tableofcontents
+%\newpage
+
+\include*{sections/intro}
+\include*{sections/method}
+\include*{sections/results}
+\include*{sections/discussion}
+
+
+
+\end{document}
+
+\end{document}
