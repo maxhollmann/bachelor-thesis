@@ -1,6 +1,6 @@
 \RequirePackage[l2tabu, orthodox]{nag}
 %\documentclass[a4paper,12pt]{article}
-\documentclass[man]{apa}
+\documentclass[man]{apa} % man, doc, jou
 
 \usepackage{amsmath}
 \usepackage[a4paper]{geometry}
@@ -11,7 +11,7 @@
 \usepackage{todonotes}
 \usepackage{apacite}
 \usepackage{newclude} % \include* to include without page break
-\usepackage[colorlinks=false, pdfborder={0 0 0}]{hyperref}
+%\usepackage[colorlinks=false, pdfborder={0 0 0}]{hyperref}
 \usepackage{cleveref} % \cref instead of \ref, automatic "Section" etc.
 
 \begin{document}
@@ -30,6 +30,9 @@
 \include*{sections/results}
 \include*{sections/discussion}
 
+\bibliographystyle{apacite}
+% http://www.ctan.org/tex-archive/biblio/bibtex/contrib/apacite/apacite.pdf
+\bibliography{/home/max/Dropbox/Psychology/Thesis/latex/references}
 
 
 \end{document}
