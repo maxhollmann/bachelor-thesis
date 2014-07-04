@@ -26,3 +26,4 @@ build
 *.fdb_latexmk
 *~
 .DS_Store
+*.fls
