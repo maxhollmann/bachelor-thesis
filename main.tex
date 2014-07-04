@@ -1,34 +1,88 @@
 \RequirePackage[l2tabu, orthodox]{nag}
 %\documentclass[a4paper,12pt]{article}
-\documentclass[man]{apa} % man, doc, jou
+\documentclass[man]{apa6} % man, doc, jou
 
 \usepackage{amsmath}
-\usepackage[a4paper]{geometry}
+% \usepackage[a4paper]{geometry}
 \usepackage{graphicx}
 \usepackage{microtype}
 \usepackage{siunitx}
 \usepackage{booktabs}
-\usepackage{todonotes}
 \usepackage{apacite}
-\usepackage{newclude} % \include* to include without page break
+%\usepackage{newclude} % \include* to include without page break
 %\usepackage[colorlinks=false, pdfborder={0 0 0}]{hyperref}
 \usepackage{cleveref} % \cref instead of \ref, automatic "Section" etc.
 \usepackage{eurosym}
 
-\title{Oscillations in the beta band predicting interval timing measured via reaction time}
+\title{Oscillations in the beta band predicting interval timing measured through reaction time}
 \shorttitle{Predicting reaction time with beta activity}
 \author{Max Hollmann}
 \affiliation{University of Groningen}
 \date{\today}
-\acknowledgements{Thanks to Hedderik van Rijn, Mark Span, and Jacob Jolij for their help.}
+\authornote{Thanks to Hedderik van Rijn, Mark Span, Udo Boehm, and Jacob Jolij.}
 
 \abstract{
   Bla Abstract!!
 }
+\keywords{beta power, interval timing, reaction time}
 
 \begin{document}
 \maketitle
-Intro bla bli.
+% TODO no newline between \maketitle and Intro.
+
+%% Hedderik: Slow potentials...
+% History of area (mostly specific stuff (CNV in combination with timing))
+% Explain terms (What's CNV?)
+% Prior research on topic
+% Explanations/mechanisms given by prior papers
+% New explanation/mechanism from other research
+%
+
+
+
+
+
+Bla \cite{tzagarakis_beta-band_2010}.
+
+\section{Method}
+\section{Results}
+
+% TODO update beta coeffs with all electrodes
+\begin{table}[ht]
+  \caption{Regression of reaction time on length condition and beta power}
+  \centering
+  \begin{tabular}{lrrrr}
+    \toprule
+                                                  & B        & SE         & t       & p         \\
+    \midrule
+    Intercept                                     & -0.0029  & 0.0008     & -3.41   & $< 0.001$ \\
+    Length condition: long                        & -0.0171  & 0.0016     & -10.47  & $< 0.001$ \\
+    Length condition: short                       & 0.0259   & 0.0015     & 16.95   & $< 0.001$ \\
+    Beta power                                    & 0.0006   & 0.0015     & 0.41    & $0.683$   \\
+    Beta power $\times$ Length condition: long    & -0.0047  & 0.0030     & -1.55   & $0.121$   \\
+    Beta power $\times$ Length condition: short   & -0.0001  & 0.0031     & -0.02   & $0.980$   \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{table}[ht]
+  \caption{Descriptive statistics overall as well as by length condition}
+  \centering
+  \begin{tabular}{lrrrrr}
+    \toprule
+                              & \multicolumn{2}{l}{Reaction time}              && \multicolumn{2}{l}{Beta}                       \\ \cmidrule{2-3} \cmidrule{5-6}
+                              & \multicolumn{1}{l}{M} & \multicolumn{1}{l}{SD} && \multicolumn{1}{l}{M} & \multicolumn{1}{l}{SD} \\
+    \midrule
+    Overall                   & .188                  &  .067                  && .277                  & .188                   \\
+    Length condition: short   & .207                  &  .070                  && .270                  & .168                   \\
+    Length condition: medium  & .188                  &  .061                  && .283                  & .200                   \\
+    Length condition: long    & .166                  &  .070                  && .270                  & .177                   \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{Discussion}
+
 
 \bibliographystyle{apacite}
 % http://www.ctan.org/tex-archive/biblio/bibtex/contrib/apacite/apacite.pdf
