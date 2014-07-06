@@ -9,12 +9,13 @@
 \usepackage{siunitx}
 \usepackage{booktabs}
 \usepackage{apacite}
+% \usepackage{natbib}
 %\usepackage{newclude} % \include* to include without page break
 %\usepackage[colorlinks=false, pdfborder={0 0 0}]{hyperref}
 \usepackage{cleveref} % \cref instead of \ref, automatic "Section" etc.
 \usepackage{eurosym}
 
-\title{Oscillations in the beta band predicting interval timing measured through reaction time}
+\title{Predicting reaction time using oscillations in the beta band}
 \shorttitle{Predicting reaction time with beta activity}
 \author{Max Hollmann}
 \affiliation{University of Groningen}
@@ -22,7 +23,7 @@
 \authornote{Thanks to Hedderik van Rijn, Mark Span, Udo Boehm, and Jacob Jolij.}
 
 \abstract{
-  Bla Abstract!!
+  Abstract...
 }
 \keywords{beta power, interval timing, reaction time}
 
@@ -38,11 +39,36 @@
 % New explanation/mechanism from other research
 %
 
+%%% Gambit: Time perception, timing, etc
+%%% Neural mechanism of timing?
+%%% CNA/CNV
+% CNA: climbing neural activity
+% CNV: negative buildup of EEG "when subject is expecting an event"
+%   proposed to reflect the accumulation part of the pacemaker-accumulator models of timing
+%   Macar et al 1999: larger cnv for longer produced intervals (also for longer judged intervals)
+%   Not reproduced by Kononowitz & Van Rijn 2011
+%%% Beta in tapping experiments (Bartolo, Joundi)
+% Beta power at beginning of interval predicts length of produced interval in synchronization-continuation tapping experiment
+%%% Beta in interval production (Kononowitz & van Rijn in prep)
+% Beta power at beginning of interval predicts length of produced interval
+%%% Interval timing in reaction time (Grosjean? or something similar)
+% Interval timing plays a role in reaction time.
+%%% (Internal/external cues)
+
+The passage of time is one of the most basic facts of our world, making timing one of the most important functions of the mind.
+Thus, a lot of scientific effort is spent on discovering its underlying mechanisms.
+One promising line of research in this area is looking at connections between electrophysiological measures from the brain and interval timing.
+For example, \citeA{macar_supplementary_1999} found a positive correlation between the amplitude of a negative cortical potential during a self-produced interval and the duration of the same interval.
+However, a replication of this experiment by \citeA{kononowicz_slow_2011} failed to find the same effect.
+
+More recently, a different measure was found to be predictive of the length of produced intervals.
+\citeA{bartolo_information_2014} used the power of neuronal oscillations in the beta band to predict the interval length in a synchronization-continuation tapping task.
+In this experiment, participants first tapped along with an externally provided beat (synchronization), and then continued tapping at the same speed without external guidance (continuation).
+During the continuation part, longer intervals were associated with higher beta power during the interval, and vice versa.
+This makes sense in the light of previous findings that linked beta power to motor inhibition \cite{joundi_driving_2012}.
 
 
-
-
-Bla \cite{tzagarakis_beta-band_2010}.
+\cite{kononowicz_beta_nodate}.
 
 \section{Method}
 \section{Results}
@@ -84,9 +110,9 @@ Bla \cite{tzagarakis_beta-band_2010}.
 \section{Discussion}
 
 
-\bibliographystyle{apacite}
+\bibliographystyle{apacite} % / apalike
 % http://www.ctan.org/tex-archive/biblio/bibtex/contrib/apacite/apacite.pdf
-\bibliography{/home/max/Dropbox/Psychology/Thesis/latex/references}
+\bibliography{/home/max/Dropbox/Psychology/Thesis/latex/clean_references}
 
 
 \end{document}
