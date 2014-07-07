@@ -1,6 +1,6 @@
 \RequirePackage[l2tabu, orthodox]{nag}
 %\documentclass[a4paper,12pt]{article}
-\documentclass[man]{apa6} % man, doc, jou
+\documentclass[man,floatsintext]{apa6} % man, doc, jou
 
 \usepackage{amsmath}
 % \usepackage[a4paper]{geometry}
@@ -57,18 +57,34 @@
 
 The passage of time is one of the most basic facts of our world, making timing one of the most important functions of the mind.
 Thus, a lot of scientific effort is spent on discovering its underlying mechanisms.
-One promising line of research in this area is looking at connections between electrophysiological measures from the brain and interval timing.
-For example, \citeA{macar_supplementary_1999} found a positive correlation between the amplitude of a negative cortical potential during a self-produced interval and the duration of the same interval.
-However, a replication of this experiment by \citeA{kononowicz_slow_2011} failed to find the same effect.
 
+% CNV -> interval length
+One line of research in this area is looking at connections between electrophysiological measures from the brain and interval timing.
+For example, \citeA{macar_supplementary_1999} found a positive correlation between the amplitude of a negative cortical potential during a self-produced interval and the duration of the same interval.
+However, in a replication of this experiment \citeA{kononowicz_slow_2011} failed to find the same effect.
+
+% Beta -> interval length
+% tapping -> off/onset same -> no predictability
+%
 More recently, a different measure was found to be predictive of the length of produced intervals.
 \citeA{bartolo_information_2014} used the power of neuronal oscillations in the beta band to predict the interval length in a synchronization-continuation tapping task.
 In this experiment, participants first tapped along with an externally provided beat (synchronization), and then continued tapping at the same speed without external guidance (continuation).
 During the continuation part, longer intervals were associated with higher beta power during the interval, and vice versa.
 This makes sense in the light of previous findings that linked beta power to motor inhibition \cite{joundi_driving_2012}.
 
+% Interval timing -> reaction time
+A large body of research exists that links interval timing to reaction time tasks \cite<e.g.,>{karlin_reaction_1959, drazin_effects_1961, grosjean_timing_2001}.
+When participants come to expect the trigger stimulus after a specific time interval, deviations from this interval lead to predictable changes in reaction time.
+For example, \citeA{grosjean_timing_2001} found that when the stimulus appears earlier than expected, reaction times will be slower.
+Conversely, when it appears later than expected, reaction times will be faster.
+An obvious explanation for this effect is that participants build up the readiness to react towards the point in time when they expect the stimulus to occur.
+When it appears before they expect it, they are less ready to respond to it, and thus slower.
+However, when it appears later than anticipated, the readiness is very high and the reaction comes faster.
 
-\cite{kononowicz_beta_nodate}.
+% This study
+The purpose of the present study is to investigate the link between beta power, interval timing, and reaction time.
+
+\cite{kononowicz_beta_2014}.
 
 \section{Method}
 \section{Results}
@@ -81,12 +97,12 @@ This makes sense in the light of previous findings that linked beta power to mot
     \toprule
                                                   & B        & SE         & t       & p         \\
     \midrule
-    Intercept                                     & -0.0029  & 0.0008     & -3.41   & $< 0.001$ \\
-    Length condition: long                        & -0.0171  & 0.0016     & -10.47  & $< 0.001$ \\
-    Length condition: short                       & 0.0259   & 0.0015     & 16.95   & $< 0.001$ \\
-    Beta power                                    & 0.0006   & 0.0015     & 0.41    & $0.683$   \\
-    Beta power $\times$ Length condition: long    & -0.0047  & 0.0030     & -1.55   & $0.121$   \\
-    Beta power $\times$ Length condition: short   & -0.0001  & 0.0031     & -0.02   & $0.980$   \\
+    Intercept                                     & -0.0029  & 0.0008     &  -3.42  & $< 0.001$ \\
+    Length condition: long                        & -0.0171  & 0.0016     & -10.44  & $< 0.001$ \\
+    Length condition: short                       &  0.0259  & 0.0015     &  16.96  & $< 0.001$ \\
+    Beta power                                    & -0.0031  & 0.0063     &  -0.49  & $0.622$   \\
+    Beta power $\times$ Length condition: long    & -0.0079  & 0.0123     &  -0.64  & $0.521$   \\
+    Beta power $\times$ Length condition: short   & -0.0086  & 0.0130     &   0.66  & $0.511$   \\
     \bottomrule
   \end{tabular}
 \end{table}
@@ -99,10 +115,10 @@ This makes sense in the light of previous findings that linked beta power to mot
                               & \multicolumn{2}{l}{Reaction time}              && \multicolumn{2}{l}{Beta}                       \\ \cmidrule{2-3} \cmidrule{5-6}
                               & \multicolumn{1}{l}{M} & \multicolumn{1}{l}{SD} && \multicolumn{1}{l}{M} & \multicolumn{1}{l}{SD} \\
     \midrule
-    Overall                   & .188                  &  .067                  && .277                  & .188                   \\
-    Length condition: short   & .207                  &  .070                  && .270                  & .168                   \\
-    Length condition: medium  & .188                  &  .061                  && .283                  & .200                   \\
-    Length condition: long    & .166                  &  .070                  && .270                  & .177                   \\
+    Overall                   & 0.188                 &  0.067                 && 0.277                 & 0.188                  \\
+    Length condition: short   & 0.207                 &  0.070                 && 0.270                 & 0.168                  \\
+    Length condition: medium  & 0.188                 &  0.061                 && 0.283                 & 0.200                  \\
+    Length condition: long    & 0.166                 &  0.070                 && 0.271                 & 0.177                  \\
     \bottomrule
   \end{tabular}
 \end{table}
