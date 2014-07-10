@@ -5,6 +5,7 @@ cat references.bib | \
   grep -v "note = " | \
   grep -v "urldate = " | \
   grep -v "url = " | \
+  grep -v "month = " | \
   sed -e "s/_????/_nodate/" | \
   sed -e "s/Manuscript in preparation/{Manuscript in preparation}/" \
   > clean_references.bib
