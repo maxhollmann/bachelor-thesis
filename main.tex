@@ -68,23 +68,21 @@ Thus, a lot of scientific effort is spent on discovering its underlying mechanis
 One line of research in this area is looking at connections between electrophysiological measures from the brain and interval timing.
 For example, \citeA{macar_supplementary_1999} found a positive correlation between the amplitude of a negative cortical potential during a self-produced interval and the duration of the same interval.
 However, in a replication of this experiment \citeA{kononowicz_slow_2011} failed to find the same effect.
-% This idea, expressed in the work of Durstewitz (2003, 2004),
-% does not predict amplitude differences for short and long produc-
-% tions, and has found support in timing paradigms
-% Durstewitz, D. (2003). Self-organizing neural integrator predicts interval times through climbing activity. J. Neurosci. 23, 5342–5353.
-% Durstewitz, D. (2004). Neural representation of interval time. Neuroreport 15, 745–749.
 
 % Beta -> interval length
-% tapping -> off/onset same -> no predictability
+% tapping -> off/onset same -> no causality
+More recently, the power of neuronal oscillations in the beta band was found to be another measure that is predictive of the length of produced intervals.
 
-More recently, a different measure was found to be predictive of the length of produced intervals.
-\citeA{bartolo_information_2014} used the power of neuronal oscillations in the beta band to predict the interval length in a synchronization-continuation tapping task performed on monkeys.
+\citeA{jenkinson_new_2011} suggested that beta power in the basal ganglia provides an index of the likelihood that a voluntary movement will be required, with a low beta power indicating a high probability.
+Indeed, \citeA{joundi_driving_2012} found that in a task where participants were instructed to tap along with an external rhythm, beta power was lower during the tapping.
+Furthermore, they found that with high tapping rates, beta activity could not fully resynchronize between taps.
+
+Along similar lines, \citeA{bartolo_information_2014} used beta power to predict the interval length in a synchronization-continuation tapping task performed on monkeys.
 In this experiment, subjects first tapped along with an externally provided beat (synchronization), and then continued tapping at the same speed without external guidance (continuation).
 During the continuation part, longer intervals were associated with higher beta power during the interval, and vice versa.
-This makes sense in the light of previous findings that linked beta power to motor inhibition \cite{joundi_driving_2012}.
 
-\citeA{kononowicz_beta_2014} extended these findings to an interval production task, in which participants were instructed to estimate time intervals of 2.5 seconds by pressing a key twice.
-In this study, intervals were distinct from each other, allowing a clear association between the beta power during the interval and the length of the interval itself.
+\citeA{kononowicz_beta_2014} extended these findings to an interval production task in humans, in which participants were instructed to estimate time intervals of 2.5 seconds by pressing a key twice.
+In this study, intervals were distinct from each other, providing a clear association between the beta power measured during the interval and the length of the interval itself, and also provided enough time for beta oscillations to fully resynchronize between trials.
 As in \citeauthor{bartolo_information_2014}'s study, beta power was postitively correlated with the length of the produced intervals.
 
 % Interval timing -> reaction time
@@ -98,11 +96,20 @@ However, when it appears later than anticipated, the readiness is very high and 
 
 % This study
 The purpose of the present study is to investigate the link between beta power, interval timing, and reaction time.
+As beta power has been found to increase the length of estimated time intervals \cite<e.g.>{kononowicz_beta_2014}, and interval timing has been shown to play a role in reaction time tasks via expectancy effects \cite<e.g.>{grosjean_timing_2001}, we hypothesise in the present study that beta power can be used to predict the expectancy, and hence the response speed, in a reaction time task.
+
+To assess this hypothesis, we performed a simple reaction time task in which participants initiated each trial themselves by pressing a key.
+Beta power was measured during the first second of each trial.
+The trigger stimulus always occured after a fixed time from the start of the trial during the first 150 trials, in order for subjects to come to expect the stimulus after this interval. In the last 250 trials, the interval was chosen at random from the standard stimulus, and both 100ms longer and shorter intervals.
+
+In line with the findings of \citeA{karlin_reaction_1959, drazin_effects_1961, grosjean_timing_2001}, reaction times were hypothesized to be slower for the shorter interval, and faster on trials with the longer interval.
+
+In addition, we expected reaction times to be faster in trials where beta power is low, because participants hypothetically estimate the interval to end sooner than it actually does, and are thus very ready to respond when the stimulus finally does occur.
+Conversely, in trials with high beta power, participants should estimate the stimulus to occur later than it does, and thus not be prepared for it when it actually occurs, leading to a slower reaction time.
 
 \section{Method}
 \section{Results}
 
-% TODO update beta coeffs with all electrodes
 \begin{table}[ht]
   \caption{Regression of reaction time on length condition and beta power}
   \centering
@@ -125,19 +132,33 @@ The purpose of the present study is to investigate the link between beta power, 
   \centering
   \begin{tabular}{lrrrrr}
     \toprule
-                              & \multicolumn{2}{l}{Reaction time}              && \multicolumn{2}{l}{Beta}                       \\ \cmidrule{2-3} \cmidrule{5-6}
-                              & \multicolumn{1}{l}{M} & \multicolumn{1}{l}{SD} && \multicolumn{1}{l}{M} & \multicolumn{1}{l}{SD} \\
+                             & \multicolumn{2}{l}{Reaction time}              && \multicolumn{2}{l}{Beta}                       \\ \cmidrule{2-3} \cmidrule{5-6}
+                             & \multicolumn{1}{l}{M} & \multicolumn{1}{l}{SD} && \multicolumn{1}{l}{M} & \multicolumn{1}{l}{SD} \\
     \midrule
-    Overall                   & 0.188                 &  0.067                 && 0.277                 & 0.188                  \\
-    Length condition: short   & 0.207                 &  0.070                 && 0.270                 & 0.168                  \\
-    Length condition: medium  & 0.188                 &  0.061                 && 0.283                 & 0.200                  \\
-    Length condition: long    & 0.166                 &  0.070                 && 0.271                 & 0.177                  \\
+    Overall                  & 0.188                 &  0.067                 && 0.277                 & 0.188                  \\
+    Length condition: short  & 0.207                 &  0.070                 && 0.270                 & 0.168                  \\
+    Length condition: medium & 0.188                 &  0.061                 && 0.283                 & 0.200                  \\
+    Length condition: long   & 0.166                 &  0.070                 && 0.271                 & 0.177                  \\
     \bottomrule
   \end{tabular}
 \end{table}
 
 \section{Discussion}
+% no separate future research section; include in into rest of text if at all
 
+% talk about both internal/external cues & explicit/implicit timing
+
+% argue with motor readiness about internal/external (for hedderik's experiment: participants can already plan when to press second time directly after the first press)
+% argue with different brain regions about explicit/implicit
+
+% explicit timing seems to be needed for motor planning
+
+% talk about bci
+
+% small conclusion in the end is nice
+% last sentence should be positive
+
+% no limitations section (findings in foreground, mention limitations only in context of findings)
 
 \bibliographystyle{apacite} % / apalike
 % http://www.ctan.org/tex-archive/biblio/bibtex/contrib/apacite/apacite.pdf
