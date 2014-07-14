@@ -227,6 +227,8 @@ actually occurs, leading to a slower reaction time.
 %   kononowicz: S can plan when to make second press -> beta at start
 %   we:         S has to wait for beep -> no motor suppression at start
 
+
+
 The first of our hypotheses, predicting that reaction times will be
 slower in trials with a short interval, and faster in trials with a
 long interval, was clearly supported by the data.  With the short and
@@ -235,6 +237,9 @@ time to the standard condition, respectively, this effect is very
 substantial given that the difference between the conditions was only
 100 ms.
 
+\subsection{Interval Length}
+
+\subsection{Beta Power}
 Our second hypothesis, that beta power will correlate positively with
 reaction time, was not confirmed.  In fact, Bayesian analyses even
 suggest that it does not have any value as a predictor of reaction
@@ -269,6 +274,33 @@ participants to wait for an external cue to respond. Thus, our finding
 might suggest that internally and externally cued tasks employ
 different timing mechanisms.
 
+\subsection{Limitations}
+The null findings might also be due to limitations of the study. The
+room in which the experiment was conducted was not electrically
+shielded, resulting in a lot of noise in the EEG signal. Furthermore,
+we did not use the FCz electrode as \citeA{kononowicz_beta_2014} did,
+but electrodes surrounding it. However, post-hoc analyses revealed a
+significant relationship between subjects' mean beta power and mean
+reaction time, indicating that beta activity was measured in a meaningful
+way.
+
+Moreover, our data did not satisfy all assumptions of the linear
+regression model; normality, independence, and linearity were
+violated.
+
+\subsection{Brain Computer Interface}
+A technical mistake in the implementation of the beta power
+calculation led to a longterm drift in the beta values, so that the
+BCI algorithm categorized almost all trials as either high or
+low. Thus, the BCI did not provide the intended benefit of obtaining
+as many non-standard interval lengths on trials with non-average beta
+values as possible. Instead, length conditions were distributed
+randomly without regard for the beta power in the current trial.
+
+Given the potential benefit of a more beneficial distribution of
+conditions, combined with no negative effects in case of failure, the
+kind of BCI used in the present study can safely be used in future
+research of a similar nature.
 
 %%%%% Hedderik to Simon
 
