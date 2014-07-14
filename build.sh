@@ -7,7 +7,10 @@ cat references.bib | \
   grep -v "url = " | \
   grep -v "month = " | \
   sed -e "s/_????/_nodate/" | \
-  sed -e "s/Manuscript in preparation/{Manuscript in preparation}/" \
+  sed -e "s/Manuscript in preparation/{Manuscript in preparation}/" | \
+  sed -e 's/ä/{\\"a}/g' | \
+  sed -e 's/ö/{\\"o}/g' | \
+  sed -e 's/ü/{\\"u}/g' \
   > clean_references.bib
 latexmk -pvc -pdf -jobname=build/Paper main.tex
 
