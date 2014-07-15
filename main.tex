@@ -163,7 +163,50 @@ trials with high beta power, participants should estimate the stimulus
 to occur later than it does, and thus not be prepared for it when it
 actually occurs, leading to a slower reaction time.
 
+
 \section{Method}
+\subsection{Participants}
+36 English speaking international students at the University of Groningen (14 male) participated in the study, with ages ranging from 19 to 25 ($M = 21.86$, $SD = 1.71$). Ten participants received partial course credits, while the remaining 26 were recruited via advertisements on a social network and received \euro 5 for participation. Four participants were excluded since EEG data was missing. One further participant was excluded due to a dysfunctional keyboard.
+
+\subsection{Electrophysiological Recording and Materials}
+The EEG signal was sampled at 250 Hz at a resolution of 71.5 nV/bit using a Porti 16 channel amplifier (TMS International BV) with an analog anti-aliasing filter set to a cutoff frequency of 125 Hz. Five locations on the scalp (Cz, Fz, Pz, C3, and C4 according to the international 10-20 system) were measured using an EEG cap (Electro-Cap International, Inc.). Furthermore, vertical (measured on the left eye) and horizontal eye movements, as well as the mastoids (A1, A2) were recorded. All electrodes were made of tin and their impedances kept below 10 k$\Omega$.
+
+Signals were referenced to the average of both mastoid electrodes. Power in the beta band (15-30 Hz) was computed from the five scalp electrodes during the first second of the interval, tapered with a 40\% Hanning window, using a fast Fourier transform.
+
+The experimental code was written in MATLAB (version R2011b, 32 bit, MathWorks) running on Windows XP, making use of the Psychtoolbox library (http://psychtoolbox.org). Responses were recorded using a PS2 keyboard with a polling rate above 200 Hz. A 27'' monitor (iiyama ProLite G2773HS; $1920 \times 1080$ pixels, 120 Hz) was employed.
+
+\subsection{Data preprocessing}
+Raw EEG data was filtered offline with a bandpass filter using 1-40 Hz, as well as a 49-51 Hz notch filter to remove noise from electronic devices in the room.
+For every participant, the last 22 trials were excluded due to a technical issue, as well as the trials that had beta values outside the range of three standard deviations. Trials containing eye movements in the horizontal or vertical channels were excluded. Additionaly, trials containing artifacts were excluded after visual inspection.
+
+Based on \citeA{grosjean_timing_2001},  trials with a negative reaction time or a reaction time exceeding 1000 milliseconds were not included in the analyses. On average 98.61 trials ($SD = 42.72$) were removed for each participant.
+
+\subsection{Task and Stimuli}
+Before the beginning of the experiment, participants were instructed not to use any timing aids (e.g., counting) and not to move or blink their eyes during trials. Each trial consisted of the following sequence of events, all presented on a black background. First, a reminder to blink (``Please blink!'', white letters on a black background) was presented for 1500 ms. This was followed by a gray fixation circle. Participants started the interval by pressing the spacebar. The circle turned white immediately after the spacebar was pressed, and stayed white until the end of the trial. The length of the interval differed between conditions and was not explicitly communicated to participants. At the end of the interval a target sound (1000 Hz, 0.2 s) was played to which participants were instructed to react to as quickly as possible by pressing the spacebar a second time. The reaction time was recorded as the time between the onset of the sound stimulus and the second key press.
+
+Feedback for valid responses was given on a 5-point scale represented by a row of five circles (see \Cref{fig:task}). Responses preceding the sound onset were given feedback in the form of the text ``too early'' displayed in red. All visual elements were displayed centrally on the screen to minimize eye-movement artifacts in the EEG signal.
+
+\begin{figure}[!ht]
+  \includegraphics[width=\textwidth]{trial}
+  \caption{Sequence of events in one trial.}
+  \label{fig:task}
+\end{figure}
+
+\subsection{Design}
+For this experiment a within-subjects design was used. The dependent variable was reaction time to the onset of a tone, presented after a certain interval. The independent variable in the quasi-experimental Block 1 was average beta power during the first second of the trial. During experimental Block 2, besides beta power in the first second of the interval, the length of the presented interval was of interest as well. The length condition was varied randomly within participants, as described below.
+
+\subsection{Procedure}
+The experiment was split into two experimental blocks preceded by five practice trials. Every 105 trials the participants were presented a screen instructing them to take a break.
+
+Block 1 consisted of 150 trials with an invariant interval of 1.8 seconds (see \Cref{fig:task}). The primary purpose of this block was to acquaint the participants with this interval and get them to expect it in later trials. The data from Block 1 was also used to create an initial distribution of the beta power for the BCI component, described below.
+In the second block of the experiment participants completed 250 trials. Contrary to Block 1 the interval length was not fixed, but for each trial drawn from three conditions: short (1.7 seconds), standard (1.8 seconds) and long (1.9 seconds) (see \Cref{fig:task}).
+
+\subsubsection{BCI}
+A brain computer interface (BCI) setup was used to facilitate an optimal distribution of length conditions according to the average beta power during the first second of the interval. More specifically, to obtain a higher number of non-average beta values in trials with non-standard interval lengths. Therefore, the distribution of beta power of all previous trials was updated with the beta power of the current trial and then split into three parts (lower $\frac{2}{3}$, middle $\frac{1}{3}$, and upper $\frac{2}{3}$). The beta power in the current trial was then categorized according to that distribution.
+
+For an average beta value (the middle $\frac{1}{3}$ of the distribution) participants were always shown the standard interval. For a high beta value (upper $\frac{2}{3}$ of the distribution) participants were presented one of the three conditions, determined by randomly drawing (without replacement) from a list that contained five short, five long, and two standard intervals. This procedure ensured that each condition was presented randomly, but also approximately equally frequent across participants. When the list was empty (i.e. after 12 beta values in the high condition) a new list was created. A low beta value (lower $\frac{2}{3}$ of the beta distribution) was handled in the same manner as a high beta value, though an independent but identical list was used.
+
+
 
 \section{Results}
 The hypotheses were that participants react slower if the stimulus is presented earlier and faster if the stimulus is presented later compared to the standard interval after which the stimulus is presented (1), and that participants with a higher beta power in the first second of the interval produce slower reaction times and vice versa (2).
