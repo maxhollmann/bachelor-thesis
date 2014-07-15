@@ -49,9 +49,28 @@
   Thanks to Dr. Hedderik van Rijn, Dr. Mark Span, Udo Boehm, Dr. Jacob Jolij, and Prof. Dr. Ritske de Jong for their assistance on this project.
 }
 
-\abstract{Abstract...
-}
-\keywords{beta power, interval timing, reaction time}
+\abstract{Interval timing plays a role in reaction time experiments,
+  in that it creates anticipation effects when stimuli occur after a
+  predictable interval, which when altered leads to predictable
+  changes in response speed.
+
+  An index of interval timing processes that emerged in the recent
+  years is beta activity, which has been found to play a role in
+  interval timing tasks via motor preparation.
+
+  The present study deals with the question whether beta activity can
+  thus be used to predict response speed. Beta activity was measured
+  during the foreperiods of a simple reaction time task and looked at
+  as a potential predictor of response speed.
+
+  Results confirm the finding that deviations from the expected
+  pre-stimulus interval influence response speed as expected, but
+  clearly show beta activity to be non-predictive. This confirms brain
+  imaging studies that revealed different neural structures to be
+  responsible for implicit and explicit timing tasks.}
+
+\keywords{beta power, interval timing, reaction
+  time, variable foreperiods}
 
 \begin{document}
 \maketitle
@@ -114,25 +133,25 @@ Indeed, \citeA{joundi_persistent_2013} found that in a task where
 participants were instructed to tap along with an external rhythm,
 beta power was lower during the tapping.  Furthermore, they found that
 with high tapping rates, beta activity could not fully resynchronize
-between taps.
+between taps.                                                           % why is this important? -> separate, long intervals
 
 Along similar lines, \citeA{bartolo_information_2014} used beta power
 to predict the interval length in a synchronization-continuation
-tapping task performed on monkeys.  In this experiment, subjects first
+tapping task performed on monkeys.  In this experiment subjects first
 tapped along with an externally provided beat (synchronization), and
 then continued tapping at the same speed without external guidance
-(continuation).  During the continuation part, longer intervals were
+(continuation).  During the continuation part longer intervals were
 associated with higher beta power during the interval, and vice versa.
 
 \citeA{kononowicz_beta_2014} extended these findings to an interval
-production task in humans, in which participants were instructed to
+production task in humans in which participants were instructed to
 estimate time intervals of 2.5 seconds by pressing a key twice.  In
-this study, intervals were distinct from each other, providing a clear
+this study intervals were distinct from each other, providing a clear
 association between the beta power measured during the interval and
 the length of the interval itself, and also provided enough time for
 beta oscillations to fully resynchronize between trials.  As in
 \citeauthor{bartolo_information_2014}'s study, beta power was
-posititively correlated with the length of the produced intervals.
+positively correlated with the length of the produced intervals.
 
 In another area of the field of timing, a large body of research
 exists that links interval timing to reaction time tasks
@@ -229,7 +248,7 @@ For every participant, the last 22 trials were excluded due to a
 technical issue, as well as the trials that had beta values outside
 the range of three standard deviations. Trials containing eye
 movements in the horizontal or vertical channels were
-excluded. Additionaly, trials containing artifacts were excluded after
+excluded. Additionally, trials containing artifacts were excluded after
 visual inspection.
 
 Based on \citeA{grosjean_timing_2001}, trials with a negative reaction
@@ -300,20 +319,20 @@ beta power during the first second of the interval. More specifically,
 to obtain a higher number of non-average beta values in trials with
 non-standard interval lengths. Therefore, the distribution of beta
 power of all previous trials was updated with the beta power of the
-current trial and then split into three parts (lower $\frac{2}{3}$,
-middle $\frac{1}{3}$, and upper $\frac{2}{3}$). The beta power in the
+current trial and then split into three parts (lower $^2/_5$,
+middle $^1/_5$, and upper $^2/_5$). The beta power in the
 current trial was then categorized according to that distribution.
 
-For an average beta value (the middle $\frac{1}{3}$ of the
+For an average beta value (the middle $^1/_5$ of the
 distribution) participants were always shown the standard
-interval. For a high beta value (upper $\frac{2}{3}$ of the
+interval. For a high beta value (upper $^2/_5$ of the
 distribution) participants were presented one of the three conditions,
 determined by randomly drawing (without replacement) from a list that
 contained five short, five long, and two standard intervals. This
 procedure ensured that each condition was presented randomly, but also
 approximately equally frequent across participants. When the list was
 empty (i.e. after 12 beta values in the high condition) a new list was
-created. A low beta value (lower $\frac{2}{3}$ of the beta
+created. A low beta value (lower $^2/_5$ of the beta
 distribution) was handled in the same manner as a high beta value,
 though an independent but identical list was used.
 
@@ -378,7 +397,7 @@ condition). Thus no evidence was found to support our second hypothesis
 
 \begin{figure}[!h]
   \includegraphics[width=0.7\textwidth]{actual_rt_by_beta}
-  \caption{Mean reaction time by beta power (cut-offs at $\frac{1}{3}$ and $\frac{2}{3}$ quantiles).}
+  \caption{Mean reaction time by beta power (cut-offs at $^1/_3$ and $^2/_3$ quantiles).}
   \label{fig:rt_by_beta}
 \end{figure}
 
@@ -464,9 +483,9 @@ strong evidence against the model including beta power as a predictor.
 In the present study we investigated the connection between interval
 timing, beta power, and reaction time. We tested whether presenting
 the stimulus to react to earlier or later than expected would
-influence response speed, and given this effect, whether beta activity
-would influence reaction time by changing the time at which
-participants expect the stimulus.
+influence response speed, and in addition, whether beta activity would
+influence reaction time by changing the time at which participants
+expect the stimulus.
 
 \subsection{Interval Length}
 The first of our hypotheses, predicting that reaction times will be
@@ -499,12 +518,20 @@ the likelier it becomes that it will occur in the next moment. This
 perspective leads to the prediction that reaction time becomes faster
 the more time elapses before the stimulus, which is in fact what we
 found. It would be an intriguing question for future research over
-what timespan this effect holds.                                         % Is there already research about this? Maybe drazin or one of them already found this..
+what time span this effect holds.                                         % Is there already research about this? Maybe drazin or one of them already found this..
+
+It is interesting to note that we obtained similar results as previous
+research in spite of significant differences in experimental
+design. In \citeA{drazin_effects_1961}'s study, participants were
+aware of the different interval durations, while no participant in our
+study reported noticing the differences. This makes it clear that the
+processes leading to the changes in reaction time do not rely on
+conscious perception.
 
 \subsection{Beta Power}
 Our second hypothesis, that beta power will correlate positively with
 reaction time, was not confirmed.  In fact, Bayesian analyses even
-clearly suggest that it does not have any value as a predictor of
+clearly suggested that it did not have any value as a predictor of
 reaction time.
 
 This finding can be interpreted using the taxonomy proposed by
@@ -538,7 +565,7 @@ externally cued tasks employ different timing mechanisms.
 % motor timing (explicit, internal cue) eingehen (Coull 2008)
 
 \subsection{Limitations}
-The findings might also have been influenced by limitations of the
+The findings might have been influenced by limitations of the
 study. The room in which the experiment was conducted was not
 electrically shielded, resulting in a lot of noise in the EEG    % Amplifier should have accounted for it, that's what Mark said I think
 signal. Furthermore, we did not use the FCz electrode as
