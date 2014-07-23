@@ -45,9 +45,7 @@
   In collaboration with: Simon Kock, Niklas Fasching, and Robbert van der Mijn
 }
 \date{\today}
-\authornote{
-  Thanks to Dr. Hedderik van Rijn, Dr. Mark Span, Udo Boehm, Dr. Jacob Jolij, and Prof. Dr. Ritske de Jong for their assistance on this project.
-}
+\authornote{Thanks to Dr. Hedderik van Rijn, Dr. Mark Span, Udo Boehm, Dr. Jacob Jolij, and Prof. Dr. Ritske de Jong for their assistance on this project.}
 
 \abstract{Interval timing plays a role in reaction time experiments,
   in that it creates anticipation effects when stimuli occur after a
@@ -74,44 +72,11 @@
 
 \begin{document}
 \maketitle
-% TODO no newline between \maketitle and Intro.
-
-%% Hedderik: Slow potentials...
-% History of area (mostly specific stuff (CNV in combination with timing))
-% Explain terms (What's CNV?)
-% Prior research on topic
-% Explanations/mechanisms given by prior papers
-% New explanation/mechanism from other research
-%
-
-% Hedderik in the method:
-% The Method section is pretty technical, which is perfectly fine.
-% However, this does mean that you will need to explain the rationale of
-% the setup of the experiment (i.e., waiting period, then cue and as
-% fast as possible reaction) in the introduction
-
-%%% Gambit: Time perception, timing, etc
-%%% Neural mechanism of timing?
-%%% CNA/CNV
-% CNA: climbing neural activity
-% CNV: negative buildup of EEG "when subject is expecting an event"
-%   proposed to reflect the accumulation part of the pacemaker-accumulator models of timing
-%   Macar et al 1999: larger cnv for longer produced intervals (also for longer judged intervals)
-%   Not reproduced by Kononowitz & Van Rijn 2011
-%%% Beta in tapping experiments (Bartolo, Joundi)
-% Beta power at beginning of interval predicts length of produced interval in synchronization-continuation tapping experiment
-%%% Beta in interval production (Kononowitz & van Rijn in prep)
-% Beta power at beginning of interval predicts length of produced interval
-%%% Interval timing in reaction time (Grosjean? or something similar)
-% Interval timing plays a role in reaction time.
-%%% (Internal/external cues)
-
 The passage of time is one of the most basic facts of our world,
 making timing one of the most important functions of the mind.  Thus,
 a lot of scientific effort is spent on discovering its underlying
 mechanisms.
 
-% CNV -> interval length
 One line of research in this area is looking at connections between
 electrophysiological measures from the brain and interval timing.  For
 example, \citeA{macar_supplementary_1999} found a positive correlation
@@ -120,8 +85,6 @@ self-produced interval and the duration of the same interval.
 However, in a replication of this experiment
 \citeA{kononowicz_slow_2011} failed to find the same effect.
 
-% Beta -> interval length
-% tapping -> off/onset same -> no causality
 More recently, the power of neuronal oscillations in the beta band was
 found to be another measure that is predictive of the length of
 produced intervals. \citeA{jenkinson_new_2011} suggested that beta
@@ -129,10 +92,10 @@ power in the basal ganglia provides an index of the likelihood that a
 voluntary movement will be required, with a low beta power indicating
 a high probability.  Indeed, \citeA{joundi_persistent_2013} found that
 in a task where participants were instructed to tap along with an
-external rhythm, beta power was lower during the tapping.
-Furthermore, they found that with high tapping rates, beta activity
-could not fully resynchronize between
-taps.  % why is this important? -> separate, long intervals
+external rhythm, beta power was lower during the tapping than at
+baseline. Furthermore, they found that with high tapping rates, beta
+activity could not fully resynchronize between
+taps.
 
 Along similar lines, \citeA{bartolo_information_2014} used beta power
 to predict the interval length in a synchronization-continuation
@@ -164,13 +127,11 @@ when it appears later than expected, reaction times will be faster.  A
 straightforward explanation for this effect is that participants build
 up the readiness to react towards the point in time when they expect
 the stimulus to occur.  When it appears before they expect it, they
-are less ready to respond to it, and thus slower.  However, when it
-appears later than anticipated, the readiness is very high and the
-reaction comes faster.
-
-These findings clearly show that timing plays a role in reaction time
-tasks, in that participants implicitly use their sense of time to
-predict when the stimulus will occur.
+are less ready to respond to it, and thus slower.  However, for
+stimuli that appear later than anticipated, the readiness is very high
+and the reaction comes faster. These findings clearly show that timing
+plays a role in reaction time tasks, in that participants implicitly
+use their sense of time to predict when the stimulus will occur.
 
 The purpose of the present study is to investigate the link between
 beta power, interval timing, and reaction time.  As beta power has
@@ -452,33 +413,6 @@ strong evidence against the model including beta power as a predictor.
 
 
 \section{Discussion}
-
-%%%%% Points to include
-% solid effect of interval length
-%   timing plays a role in RT
-%     grosjean, karlin, drazin replicated/extended
-%     -> robust effect
-%
-% no effect of beta
-%   implicit vs explicit timing
-%   internal vs external cues
-%     coull & nobre 2008
-%       Implicit timing; Exogenous temporal expectations
-%         parietal cortex and cerebellum
-%       Explicit timing; motor timing
-%         Basal ganglia -> where joundi 2013 found beta suppression during tapping
-
-% !! coull 2008 -> explicit/implicit different
-% coull 2011 -> internal/external same
-%
-% ! näätäänen hazard function (foreperiod etc)
-
-% Hazard function: conditional probability that a target will occur at a particular time, given that it has not already occurred (Coull 2008)
-
-% beta -> motor inhibition:
-%   kononowicz: S can plan when to make second press -> beta at start
-%   we:         S has to wait for beep -> no motor suppression at start
-
 In the present study we investigated the connection between interval
 timing, beta power, and reaction time. We tested whether presenting
 the stimulus to react to earlier or later than expected would
@@ -490,13 +424,13 @@ expect the stimulus.
 The first of our hypotheses, predicting that reaction times will be
 slower in trials with a short interval, and faster in trials with a
 long interval, was clearly supported by the data.  With the short and
-long intervals leading to a 25.9 ms and a 17.1 ms difference in       % I would make it clearer that one is slower and the other faster than standard
-reaction time to the standard condition, respectively, this effect is
+long intervals leading, respectively, to a 25.9 ms and a 17.1 ms
+difference in reaction time to the standard condition, this effect is
 very substantial given that the difference between the conditions was
 only 100 ms.
 
 As expected from previous studies \cite<e.g.,>{karlin_reaction_1959,
-  drazin_effects_1961, grosjean_timing_2001}, participants reacted   % Talk about HOW we extended the findings, or what is different between our study and their... e.g. Drazin: participants knew that they were presented with different foreperiods; our: they did not know
+  drazin_effects_1961, grosjean_timing_2001}, participants reacted
 slower in trials with short intervals, and faster in trials with long
 intervals. The decrease in response speed for short intervals can be
 accounted for by the fact that participants are likely not yet
@@ -517,7 +451,7 @@ the likelier it becomes that it will occur in the next moment. This
 perspective leads to the prediction that reaction time becomes faster
 the more time elapses before the stimulus, which is in fact what we
 found. It would be an intriguing question for future research over
-what time span this effect holds.                                         % Is there already research about this? Maybe drazin or one of them already found this..
+what time span this effect holds.
 
 It is interesting to note that we obtained similar results as previous
 research in spite of significant differences in experimental
@@ -560,15 +494,13 @@ responses based purely on internal cues (interval timing), the present
 task required participants to wait for an external cue to
 respond. Thus, our finding might suggest that internally and
 externally cued tasks employ different timing mechanisms.
-% Kannst hier auf temporal expectation (implicit, external cue) und
-% motor timing (explicit, internal cue) eingehen (Coull 2008)
 
 \subsection{Limitations}
 The findings might have been influenced by limitations of the
 study. The room in which the experiment was conducted was not
-electrically shielded, resulting in a lot of noise in the EEG    % Amplifier should have accounted for it, that's what Mark said I think
+electrically shielded, resulting in a lot of noise in the EEG
 signal. Furthermore, we did not use the FCz electrode as
-\citeA{kononowicz_beta_2014} did, but electrodes surrounding       % eeg is not spatially precise
+\citeA{kononowicz_beta_2014} did, but electrodes surrounding
 it. However, post-hoc analyses revealed a significant relationship
 between subjects' mean beta power and mean reaction time, indicating
 that beta activity was measured in a meaningful way.
@@ -576,8 +508,6 @@ that beta activity was measured in a meaningful way.
 Moreover, our data did not satisfy all assumptions of the linear
 regression model; normality, independence, and linearity were
 violated.
-% Kannst du evtl zu Konowicz (2014) finding dass tonic beta activity (also unabhängig vom keypress) mit timing zusammenhängt
-% Effekt of absolute not only relative beta power
 
 \subsection{Brain Computer Interface}
 A technical mistake in the implementation of the beta power
@@ -601,26 +531,7 @@ suitable as a predictor, which confirms brain imaging studies that
 found that explicit and implicit timing activates different brain
 regions \cite{coull_dissociating_2008}.
 
-%%%%% Hedderik to Simon
-
-% no separate future research section; include it into rest of text if at all
-
-% talk about both internal/external cues & explicit/implicit timing
-
-% argue with motor readiness about internal/external (for hedderik's experiment: participants can already plan when to press second time directly after the first press)
-% argue with different brain regions about explicit/implicit
-
-% explicit timing seems to be needed for motor planning
-
-% talk about bci
-
-% small conclusion in the end is nice
-% last sentence should be positive
-
-% no limitations section (findings in foreground, mention limitations only in context of findings)
-
-\bibliographystyle{apacite} % / apalike
-% http://www.ctan.org/tex-archive/biblio/bibtex/contrib/apacite/apacite.pdf
+\bibliographystyle{apacite}
 \bibliography{/home/max/Dropbox/Psychology/Thesis/latex/clean_references}
 
 
