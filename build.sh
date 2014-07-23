@@ -12,6 +12,6 @@ cat references.bib | \
   sed -e 's/ö/{\\"o}/g' | \
   sed -e 's/ü/{\\"u}/g' \
   > clean_references.bib
-latexmk -pvc -pdf -jobname=build/Paper main.tex
 
-#  sed -e "s/title = {Beta Oscillatory Activity Indexes Time Estimation},/title = {Beta Oscillatory Activity Indexes Time Estimation}, year = {in preparation},/" \
+latexdiff first-draft.tex main.tex > diff.tex
+latexmk -pvc -pdf -jobname=build/Paper diff.tex
