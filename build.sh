@@ -14,4 +14,5 @@ cat references.bib | \
   > clean_references.bib
 
 latexdiff first-draft.tex main.tex > diff.tex
-latexmk -pvc -pdf -jobname=build/Paper diff.tex
+ruby newlines.rb diff.tex > diff-n.tex
+latexmk -pvc -pdf -jobname=build/Paper diff-n.tex
