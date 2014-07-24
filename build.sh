@@ -13,6 +13,6 @@ cat references.bib | \
   sed -e 's/ü/{\\"u}/g' \
   > clean_references.bib
 
-latexdiff first-draft.tex main.tex > diff.tex
-ruby newlines.rb diff.tex > diff-n.tex
+# latexdiff first-draft.tex main.tex > diff.tex
+# ruby newlines.rb diff.tex > diff-n.tex
 latexmk -pv -pdf -jobname=build/Paper diff-n.tex
