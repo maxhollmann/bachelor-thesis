@@ -15,4 +15,4 @@ cat references.bib | \
 
 # latexdiff first-draft.tex main.tex > diff.tex
 # ruby newlines.rb diff.tex > diff-n.tex
-latexmk -pv -pdf -jobname=build/Paper diff-n.tex
+latexmk -pv -pdf -jobname=build/Paper main.tex
